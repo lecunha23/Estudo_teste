@@ -1,5 +1,6 @@
-require 'spec_helper'
-require 'binary_search'
+
+require_relative '../spec/spec_helper'
+require '../../lib/binary_search'
 
 describe "Busca_binaria" do
   it "retorna o índice do elemento se estiver presente no array" do

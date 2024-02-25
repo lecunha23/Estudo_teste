@@ -14,7 +14,7 @@ def busca_binaria(array, alvo)
       esquerda = meio + 1
 
     else
-      direita = meio - 1
+      direita = - 1
     end
   end
 
