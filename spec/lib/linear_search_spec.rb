@@ -10,7 +10,7 @@ RSpec.describe '#linear_search' do
     expect(linear_search(arr, key)).to eq(2)
   end
 
-  it 'retorna -1 se a cgave nao estiver presente no array ' do
+  it 'retorna -1 se a chave nao estiver presente no array ' do
     arr = [10, 50, 30, 70, 80, 20, 90, 40]
     key = 100
     expect(linear_search(arr, key)).to eq(-1)
