@@ -10,12 +10,5 @@ def bubble_sort(arr)
       end
     end
   end
-end
-
-# Testando o algoritmo
-arr = [64, 34, 25, 12, 22, 11, 90]
-bubble_sort(arr)
-puts "Lista ordenada:"
-arr.each do |element|
-  puts element
+  arr  # Retorna a lista ordenada
 end
