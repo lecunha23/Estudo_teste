@@ -8,5 +8,14 @@ RSpec.describe "bubble_sort" do
     expected_arr = [11, 22, 25, 32, 34, 64, 90]
     sorted_arr = bubble_sort(input_arr)
     expect(sorted_arr).to eq(expected_arr)
+
+  end
+
+
+    it "ordena corretamente uma lista desordenada" do
+      input_arr = [9, 1, 6, 5, 8, 2, 3, 7, 4]
+      expected_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      sorted_arr = bubble_sort(input_arr)
+      expect(sorted_arr).to eq(expected_arr)
   end
 end
