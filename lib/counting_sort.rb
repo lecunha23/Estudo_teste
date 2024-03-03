@@ -22,7 +22,7 @@ def counting_sort(array, max_value)
 end
 
 # Exemplo de uso:
-array = [4, 3, 2, 8, 3, 3, 1]
+array = [4, 3, 2, 8, 4, 3, 1]
 max_value = array.max
 counting_sort(array, max_value)
 puts "Array ordenado: #{array}"
