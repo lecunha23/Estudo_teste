@@ -1,6 +1,6 @@
 
 require_relative '../spec_helper'
-require '../../lib/binary_search'
+require_relative '../../lib/binary_search'
 
 RSpec.describe "busca_binaria" do
   it "retorna o índice do elemento se estiver presente no array" do
