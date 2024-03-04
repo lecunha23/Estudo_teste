@@ -1,7 +1,7 @@
 
-
+require 'rspec'
 require_relative '../spec_helper'
-require '../../lib/linear_search'
+require_relative '../../lib/linear_search'
 
 RSpec.describe '#linear_search' do
   it ' retorna o indice da chave se ela estiver presente no array' do
