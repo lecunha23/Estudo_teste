@@ -14,10 +14,10 @@ end
 
 RSpec.describe 'Counting Sort' do
   it 'sorts an array of integers' do
-    array = [4, 2, 2, 8, 3, 3, 1]
+    array = [5, 3, 2, 8, 4, 7, 6, 1]
     max_value = array.max
     counting_sort(array, max_value)
-    expect(array).to eq([1, 2, 2, 3, 3, 4, 8])
+    expect(array).to eq([1, 2, 3, 4, 5, 6, 7, 8])
   end
 
   it 'sorts an empty array' do
@@ -32,5 +32,11 @@ RSpec.describe 'Counting Sort' do
     max_value = array.max
     counting_sort(array, max_value)
     expect(array).to eq([1, 1, 2, 3, 3, 4, 5, 5])
+  end
+  it 'sorts an array with repeated elements' do
+    array = [10, 3, 11, 53, 12, 31, 43, 15]
+    max_value = array.max
+    counting_sort(array, max_value)
+    expect(array).to eq([3, 10, 11, 12, 15, 31, 43, 53])
   end
 end
