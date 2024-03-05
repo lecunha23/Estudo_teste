@@ -17,7 +17,7 @@ RSpec.describe 'Counting Sort' do
     array = [5, 3, 2, 8, 4, 7, 6, 1]
     max_value = array.max
     counting_sort(array, max_value)
-    expect(array).to eq([1, 2, 2, 3, 3, 4, 8])
+    expect(array).to eq([1, 2, 3, 4, 5, 6, 7, 8])
   end
 
   it 'sorts an empty array' do
