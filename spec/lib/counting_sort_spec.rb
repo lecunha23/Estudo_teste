@@ -14,7 +14,7 @@ end
 
 RSpec.describe 'Counting Sort' do
   it 'sorts an array of integers' do
-    array = [4, 2, 2, 8, 3, 3, 1]
+    array = [5, 3, 2, 8, 4, 7, 6, 1]
     max_value = array.max
     counting_sort(array, max_value)
     expect(array).to eq([1, 2, 2, 3, 3, 4, 8])
