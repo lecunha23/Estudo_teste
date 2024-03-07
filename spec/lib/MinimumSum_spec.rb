@@ -1,5 +1,6 @@
-# spec/minimum_sum_spec.rb
-require_relative '../../lib/minimum_sum'
+require 'rspec'
+require_relative '../spec_helper'
+require_relative '../../lib/MinimumSum'
 
 RSpec.describe MinimumSum do
   describe "#minimun_sum" do

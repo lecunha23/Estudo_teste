@@ -2,7 +2,7 @@
 class MinimumSum
   def minimun_sun(matrix)
     #vai iniciar a variavel para armazenar a soma minima
-    min_sum = 0
+    min_sum = matrix[0].sum
 
     matrix.each do |row|
       #adiciona o menor valor da linha a soma minima
