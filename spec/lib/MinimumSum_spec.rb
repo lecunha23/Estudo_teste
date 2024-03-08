@@ -1,10 +1,11 @@
+# frozen_string_literal: true
 
 require_relative '../spec_helper'
 require_relative '../../lib/MinimumSum'
 
 RSpec.describe MinimumSum do
-  describe "#minimum_sum" do
-    it "calculates the minimum sum of the given matrix" do
+  describe '#minimum_sum' do
+    it 'calculates the minimum sum of the given matrix' do
       matrix = [
         [5, 1, 3],
         [9, 5, 6],
