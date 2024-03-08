@@ -1,25 +1,12 @@
-
 class MinimumSum
-  def minimun_sun(matrix)
-    #vai iniciar a variavel para armazenar a soma minima
-    min_sum = matrix[0].sum
+  def minimum_sum(matrix)
+    min_val = Float::INFINITY
 
     matrix.each do |row|
-      #adiciona o menor valor da linha a soma minima
-      min_sum += row.min
+      row_min = row.min
+      min_val = row_min if row_min < min_val
     end
 
-    #retorna a soma minima
-    return min_sum
+    min_val * matrix.length
   end
 end
-
-matrix = [
-  [5, 2, 3],
-  [9, 5, 6],
-  [2, 8, 9]
-]
-
-# cria uma instancia da classe
-min_sum_calculator = MinimumSum.new
-puts "Soma minima da matriz #{min_sum_calculator.minimun_sun(matrix)}"
