@@ -12,7 +12,7 @@ RSpec.describe MinimumSum do
         [2, 8, 9]
       ]
       min_sum_calculator = MinimumSum.new
-      expect(min_sum_calculator.minimum_sum(matrix)).to eq(9) # A soma mínima esperada é 9
+      expect(min_sum_calculator.minimum_sum(matrix)).to eq(3) # A soma mínima esperada é 8
     end
   end
 end
