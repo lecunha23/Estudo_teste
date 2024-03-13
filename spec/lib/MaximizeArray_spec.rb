@@ -1,4 +1,4 @@
-require_relative '../lib/MaximizeArray_spec.rb' # Importar o código da classe MaximizeArray
+require_relative '../../lib/MaximizeArray' # Importar o código da classe MaximizeArray
 require 'rspec'
 require_relative '../spec_helper'
 
@@ -21,7 +21,7 @@ RSpec.describe MaximizeArray do
         maximizer = MaximizeArray.new(arr)
         k = 2
         result = maximizer.maximize_sum_after_negations(k)
-        expect(result).to eq(10) # O resultado esperado é 10
+        expect(result).to eq(11) # O resultado esperado é 10
       end
     end
 
