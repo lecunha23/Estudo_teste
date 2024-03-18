@@ -1,6 +1,6 @@
 
 require 'rspec'
-require_relative '../spec_helper'
+ruby -v
 require_relative '../../lib/linear_search'
 
 RSpec.describe '#linear_search' do
